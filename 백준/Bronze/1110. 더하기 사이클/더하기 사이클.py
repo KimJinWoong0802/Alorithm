@@ -1,18 +1,18 @@
 num = int(input())
-
-n = num
-count = 0
+cnt = 0
+N = num
 
 while True:
+
     a = num // 10
     b = num % 10
     c = (a + b) % 10
 
     num = (b * 10) + c
 
-    count += 1
+    cnt += 1
 
-    if num == n:
+    if num == N:
         break
 
-print(count)
+print(cnt)
